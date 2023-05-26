@@ -127,7 +127,9 @@ The file was then exported as a csv. using the `to_csv.` call in pandas and save
 
 
 ## Technologies Employed
-Python packages used in order: pandas, os, glob, and thefuzz (formerly known as fuzzywuzzy). The assessment in its entirety was completed using [Jupyter Notebook](https://jupyter.org/).
+Python packages used in order: pandas, os, glob, and thefuzz (formerly known as fuzzywuzzy). The assessment in its entirety was completed using [Jupyter Notebook](https://jupyter.org/), solely to utilize the run-by-cell functionality and assure output was accurate throughout the steps taken to produce the final product. 
+
+However, the script was revamped utilizing VS Code and its intergrated terminal to improve proficiency and processing speed while ensuring accuracy in the final results. 
 
 </br>
 
@@ -138,6 +140,10 @@ It would make sense to perform this procedure based on the stack provided in a d
 For starters, after completing the first match, where `thefuzz` gave a dedicated score and name, uploading the files as a `.csv` to a Data Warehouse (e.g. Google BigQuery, Civis Analytics Platform) after cleaning the matches would have easily been a viable solution and a great timesaver. Additionally, utilizing the `pd.read_sql` call via `pandas` could serve as an alternative. However, with the Python packages listed under [Dependencies](#Dependencies), it was quite simple and effecient to remain in Python and carry out the process. 
 
 Understandably, this process is on par with Data Engineering, and I enjoy performing tasks of this nature, however, in my experience in progressive data, applications like TargetSmart offers a tool 'SmartMatching' which cut out data management tasks like voter file matching serve as a great tool when performing analysis on voter_file data on a day-to-day basis. In my <i>present-visualization-queries repository</i>, the folder `VR_Matched_&_Counts` showcases the efficiency of utilizing tools like <i>SmartMatch</i>, where raw data-entry of Voter outreach canvassers are matched back to a state or national `voter_id`.
+
+Lastly, I'd like to recreate this process utilizing [Splink](https://moj-analytical-services.github.io/splink/) as a record-lnkage python package. `thefuzz` was implemented solely due to a lack of exposure on my end as to what python packages can and <i>should</i> be used for matching these two sources of data. 
+
+Now that the assessment is long over, I look to turn this into a personal project by testing different python packages, trying different ideas, and continue learning as much as I can. At this point, it's not as much important to find the correct solution as it is to learn more and further develop my understanding and comprehension for python, data engineering, and everything else this process potentially entails. 
 
 </br>
 
